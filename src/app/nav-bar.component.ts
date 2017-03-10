@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 
 export class NavBarComponent {
-  name: String;
-
-  constructor(){
-    this.name = 'Pravallika';
-  }
+  // name: String;
+  //
+  // constructor(){
+  //   this.name = 'Pravallika';
+  // }
 }
