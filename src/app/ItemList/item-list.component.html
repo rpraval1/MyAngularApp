@@ -1,0 +1,15 @@
+<div class="container">
+  <h2>My Items</h2>
+
+  <div>
+    <label><h5>Item name:</h5></label> <input [(ngModel)]="newItem.name"/>
+    <button class="btn waves-effect waves-light" (click)="addItem()">Add</button>
+  </div>
+  <ul class="collection">
+    <li *ngFor="let item of items" class="collection-item">
+      <span>{{item.id}}</span>
+      <span>{{item.name}}</span>
+      <button class="btn waves-effect waves-light right" (click)="removeItem(item); $event.stopPropagation()">X</button>
+    </li>
+  </ul>
+</div>

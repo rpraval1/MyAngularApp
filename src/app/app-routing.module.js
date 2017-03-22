@@ -10,21 +10,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var item_list_component_1 = require('./myKitchenItemList/item-list.component');
-var my_kitchen_component_1 = require('./myKitchen/my-kitchen.component');
-var item_detail_component_1 = require('./myKitchenItemList/item-detail.component');
+var item_list_component_1 = require('./ItemList/item-list.component');
 var appRoutes = [
     {
         path: '',
-        component: my_kitchen_component_1.MyKitchenComponent
-    },
-    {
-        path: 'itemList',
         component: item_list_component_1.ItemListComponent
-    },
-    {
-        path: 'detail/:id',
-        component: item_detail_component_1.ItemDetailComponent
     }
 ];
 var AppRoutingModule = (function () {
