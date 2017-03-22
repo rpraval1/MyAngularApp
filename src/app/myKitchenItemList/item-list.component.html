@@ -1,0 +1,13 @@
+<h2>My Items</h2>
+
+<div>
+  <label>Item name:</label> <input [(ngModel)]="newItem.name"/>
+  <button (click)="addItem()">Add</button>
+</div>
+<ul>
+  <li *ngFor="let item of items">
+    <span>{{item.id}}</span>
+    <span>{{item.name}}</span>
+    <button (click)="removeItem(item); $event.stopPropagation()">X</button>
+  </li>
+</ul>
